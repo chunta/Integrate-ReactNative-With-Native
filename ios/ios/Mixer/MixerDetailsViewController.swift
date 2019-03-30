@@ -83,9 +83,8 @@ class MixerDetailsViewController: UIViewController {
   @IBAction func onReactNavtiveUI()
   {
     print("REACT NATIVE")
-    
     #if RELEASE
-        let jsCodeLocation = RCTBundleURLProvider.sharedSettings()!.jsBundleURL(forBundleRoot: "index", fallbackResource: nil)  // release only code
+        let jsCodeLocation = Bundle.main.url(forResource: "main", withExtension: "jsbundle")
     #else
         let jsCodeLocation = URL(string: "http://192.168.100.5:8081/index.bundle?platform=ios") // debug only code
     #endif

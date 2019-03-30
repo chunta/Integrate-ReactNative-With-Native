@@ -17,6 +17,7 @@
 		30C72A761CE12A6B0085055A /* Mixers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30C72A751CE12A6B0085055A /* Mixers.plist */; };
 		30C72A781CE17D0C0085055A /* MixerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C72A771CE17D0C0085055A /* MixerDetailsViewController.swift */; };
 		30C72A7A1CE199180085055A /* AddRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C72A791CE199180085055A /* AddRatingViewController.swift */; };
+		AC2D1AF4224F312D003B204C /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = AC2D1AF3224F312D003B204C /* main.jsbundle */; };
 		BAF77489096562BA404D72D4 /* Pods_Mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18CC1A9B7DBD5C9F3E5A7B7 /* Pods_Mixer.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		30C72A771CE17D0C0085055A /* MixerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixerDetailsViewController.swift; sourceTree = "<group>"; };
 		30C72A791CE199180085055A /* AddRatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRatingViewController.swift; sourceTree = "<group>"; };
 		4542DFDC93A7E670ACA6536D /* Pods-Mixer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mixer/Pods-Mixer.release.xcconfig"; sourceTree = "<group>"; };
+		AC2D1AF3224F312D003B204C /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
 		C18CC1A9B7DBD5C9F3E5A7B7 /* Pods_Mixer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EFD957DC019A39CFC5725B /* Pods-Mixer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mixer/Pods-Mixer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 		306E1D361CE1160000DD8143 /* Mixer */ = {
 			isa = PBXGroup;
 			children = (
+				AC2D1AF3224F312D003B204C /* main.jsbundle */,
 				306E1D3B1CE1160000DD8143 /* Main.storyboard */,
 				306E1D371CE1160000DD8143 /* AppDelegate.swift */,
 				306E1D491CE11BA900DD8143 /* MixersViewController.swift */,
@@ -169,6 +172,7 @@
 			files = (
 				306E1D421CE1160000DD8143 /* LaunchScreen.storyboard in Resources */,
 				306E1D3F1CE1160000DD8143 /* Assets.xcassets in Resources */,
+				AC2D1AF4224F312D003B204C /* main.jsbundle in Resources */,
 				30C72A761CE12A6B0085055A /* Mixers.plist in Resources */,
 				306E1D3D1CE1160000DD8143 /* Main.storyboard in Resources */,
 			);
@@ -364,6 +368,7 @@
 				DEVELOPMENT_TEAM = NEEK5ZHF5F;
 				INFOPLIST_FILE = Mixer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appledaily.devtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ForDeveloperTest;
@@ -380,6 +385,7 @@
 				DEVELOPMENT_TEAM = NEEK5ZHF5F;
 				INFOPLIST_FILE = Mixer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appledaily.devtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ForDeveloperTest;
